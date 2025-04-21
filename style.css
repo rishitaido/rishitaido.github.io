@@ -25,3 +25,26 @@ html, body {
     padding: 20px;
   }
   
+  .nav-buttons {
+    text-align: center;       /* center the group of buttons */
+    margin: 20px 0;
+  }
+  
+  .btn {
+    display: inline-block;               
+    background-color: #013220;         /* dark‑green background */
+    color: #F5F5DC;                    /* beige text */
+    padding: 10px 20px;                
+    margin: 0 10px;                    
+    border-radius: 4px;                
+    text-decoration: none;             
+    font-size: 16px;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+  }
+  
+  
