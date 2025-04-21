@@ -7,27 +7,21 @@ html, body {
   body {
     display: flex;
     flex-direction: column;
+    background-color: #F5F5DC;  /* beige page background */
+    color: #013220;             /* dark‑green main text */
   }
   
-  header {
+  header, footer {
     flex: 0 0 auto;
-    background-color: #333;
-    color: #fff;
+    background-color: #013220;  /* dark green */
+    color: #F5F5DC;             /* beige text */
     padding: 15px;
     text-align: center;
   }
   
   main {
-    flex: 1 1 auto;       /* take all remaining space */
-    overflow-y: auto;     /* enable scrolling here */
+    flex: 1 1 auto;   /* fill remaining space */
+    overflow-y: auto; /* enable scrolling */
     padding: 20px;
-  }
-  
-  footer {
-    flex: 0 0 auto;
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
   }
   
