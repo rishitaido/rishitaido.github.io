@@ -13,7 +13,7 @@ header, footer {
 }
 
 nav a {
-    color: #fff;
+    color: #a19124;
     margin: 0 10px;
     text-decoration: none;
 }
@@ -23,7 +23,7 @@ main {
 }
 
 h1, h2 {
-    color: #333;
+    color: #033c1e;
 }
 
 ul {
@@ -31,7 +31,10 @@ ul {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    
     width: 100%;
+}
+
+html{
+    overflow-y: scroll;
 }
