@@ -70,8 +70,12 @@ main {
 
 /* Title Styles */
 header h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+
 }
 
 .summary {
@@ -87,3 +91,47 @@ footer p {
   color: #ccc;
   margin-top: 40px;
 }
+
+.intro {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.project-button {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.project-btn {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 16px;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  backdrop-filter: blur(4px);
+  display: inline-block;
+}
+
+.project-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
