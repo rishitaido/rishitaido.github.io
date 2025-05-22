@@ -1,59 +1,36 @@
-<!-- resume.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Résumé – Rishi Raj</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="nav-buttons">
-    <a href="index.html" class="btn">Home</a>
-    <a href="resume.html" class="btn">Résumé</a>
-    <a href="coursework.html" class="btn">Coursework</a>
-    <a href="projects.html" class="btn">Projects</a>
-    <a href="blog.html" class="btn">Blog</a>
-    <a href="https://www.linkedin.com/in/rishi-raj-763122238/" target="btn">LinkedIn</a>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="media/animevid.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay">
+    <div class="nav-buttons">
+      <a href="index.html" class="btn">Home</a>
+      <a href="resume.html" class="btn">Résumé</a>
+      <a href="coursework.html" class="btn">Coursework</a>
+      <a href="projects.html" class="btn">Projects</a>
+      <a href="https://www.linkedin.com/in/rishi-raj-763122238/" class="btn" target="_blank">LinkedIn</a>
+    </div>
+
+    <main>
+      <h1 style="text-align: center;">My Résumé</h1>
+      <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <iframe src="Rishi_Raj_Resume.pdf" width="80%" height="700px" style="border: none;"></iframe>
+      </div>
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="Rishi_Raj_Resume.pdf" target="_blank" class="btn">Download PDF</a>
+      </p>
+    </main>
   </div>
-  <header>
-    <h1>Rishi Raj</h1>
-    <p>404‑918‑8060 | <a href="mailto:rishitaido@gmail.com">rishitaido@gmail.com</a> | <a href="https://www.linkedin.com/in/rishi-raj-763122238/" target="_blank">linkedin.com/in/rishi-raj</a></p>
-    
-  </header>
-
-  <main>
-    <section>
-      <h2>Education</h2>
-      <p><strong>Georgia State University</strong>, Atlanta, GA<br>
-      B.S. in Computer Science, Expected May 2026<br>
-      Major GPA: 3.9</p>
-      <p><strong>Relevant Coursework:</strong> Data Structures (CS 2510), System Level Programming (CS 3320), Software Development (CS 3350)</p>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <h3>Lead Barista, Dutch Monkey Doughnuts</h3>
-      <p><em>Aug 2022 – Mar 2025</em></p>
-      <ul>
-        <li>Trained and mentored new baristas on specialty beverage preparation, POS operations, and customer service protocols.</li>
-        <li>Managed high‑volume order flow while maintaining drink quality standards and shop cleanliness.</li>
-        <li>Provided exceptional customer care: greeted guests, advised on menu selections, and resolved service issues.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Technical Skills & Certifications</h2>
-      <ul>
-        <li><strong>Languages:</strong> Java, Python, JavaScript, C, C++, R, SQL, HTML/CSS</li>
-        <li><strong>Tools & Frameworks:</strong> VS Code, Eclipse, Git/GitHub, DBeaver, Tkinter, Pandas, NumPy, Matplotlib, SQLite</li>
-        <li><strong>Certifications:</strong> Microsoft AZ‑900 Azure Fundamentals; Career Essentials in Data Analysis (Microsoft & LinkedIn)</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Rishi Raj</p>
-  </footer>
 </body>
 </html>
