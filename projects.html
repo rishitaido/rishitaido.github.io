@@ -19,7 +19,6 @@
     <!-- Navigation -->
     <div class="nav-buttons">
       <a href="index.html" class="btn">Home</a>
-      <a href="resume.html" class="btn">Résumé</a>
       <a href="projects.html" class="btn">Projects</a>
       <a href="https://www.linkedin.com/in/rishi-raj-763122238/" class="btn" target="_blank">LinkedIn</a>
     </div>
@@ -27,92 +26,204 @@
     <!-- Header -->
     <header>
       <h1>Projects</h1>
+      <p class="subtitle">Building solutions with modern technologies</p>
     </header>
 
     <!-- Main Content -->
     <main class="project-list">
-      <article> 
-        <h2>Weather Digital Twin</h2>
-        <p><em> Python, JavaScript, HTML, CSS | Jan 2025 – Feb 2025</em></p>
-        <ul>
-          <li>Engineered a CesiumJS-powered digital twin web app integrating WeatherAPI for real-time forecasts, UV index, AQI, and marine data across a 3D globe.</li>
-          <li>Optimized sensor visualization logic with toggles for overlays (wind, precipitation, astronomy), improving data clarity and reducing user clutter.</li>
-          <li>Built custom weather panels with HTML/CSS/JS for 7-day, 24-hour, historical, and future forecasting—supporting up to 300-day lookahead.</li>
+      
+      <!-- Project 1: AI Travel Concierge -->
+      <article class="project-card">
+        <div class="project-header">
+          <h2>AI Travel Concierge</h2>
+          <span class="project-date">May 2025 - Aug 2025</span>
+        </div>
+        <div class="tech-stack">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Flask</span>
+          <span class="tech-tag">Mistral AI</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Prometheus</span>
+          <span class="tech-tag">Grafana</span>
+          <span class="tech-tag">MapLibre GL JS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <ul class="project-details">
+          <li>Built production-ready Flask application with Docker containerization and Prometheus/Grafana monitoring, tracking API performance and system health across 1,000+ user requests.</li>
+          <li>Integrated Mistral AI for conversational trip planning with intelligent caching that reduced API costs by 60% while maintaining sub-2-second response times.</li>
+          <li>Designed a responsive single-page application with asynchronous JavaScript, localStorage persistence for user itineraries, and mobile-first CSS.</li>
+          <li>Developed an interactive 3D airport visualization using MapLibre GL JS with custom models and dynamic POI rendering, deployed to Render with CI/CD pipeline.</li>
         </ul>
         <div class="project-button">
-          <!--<a href="" class="btn project-btn" target="_blank">View on GitHub</a>-->
+          <a href="https://github.com/rishitaido/airports.ai.OQQ" class="btn project-btn" target="_blank">
+            <span>View on GitHub</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
         </div>
       </article>
 
-      <article> 
-        <h2>AI Travel Planner</h2>
-        <p><em>Python, JavaScript, HTML, CSS | Jan 2025 – Feb 2025</em></p>
-        <ul>
-          <li>Engineered a Flask backend with modular Blueprint routing for AI integration, using OpenRouter’s GPT models to process natural language trip planning requests.</li>
-          <li>Integrated interactive 3D maps using Mapbox GL JS for visualizing airports and itineraries, and Three.js for 3D aircraft modeling.</li>
-          <li>Built a dynamic AI chat interface using vanilla JavaScript and the Fetch API, supporting streaming responses and itinerary hand-off via localStorage.</li>
+      <!-- Project 2: Weather Digital Twin -->
+      <article class="project-card">
+        <div class="project-header">
+          <h2>Weather Digital Twin</h2>
+          <span class="project-date">Jan 2025 – Feb 2025</span>
+        </div>
+        <div class="tech-stack">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">CesiumJS</span>
+          <span class="tech-tag">WeatherAPI</span>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+        </div>
+        <ul class="project-details">
+          <li>Developed full-stack 3D weather visualization platform using CesiumJS and WeatherAPI, displaying real-time meteorological data (UV, AQI, marine forecasts, astronomy) on an interactive globe with building overlays.</li>
+          <li>Implemented interactive sensor visualization systems with JavaScript event handlers for draggable map entities, toggle controls for multiple data layers (wind, precipitation, astronomy), and real-time tooltip feedback.</li>
+          <li>Designed responsive, event-driven architecture with asynchronous API integration, toast notifications, loading states, and collapsible panels with drag-and-drop functionality.</li>
         </ul>
         <div class="project-button">
-          <a href="https://github.com/rishitaido/airports.ai.OQQ" class="btn project-btn" target="_blank">View on GitHub</a>
+          <a href="#" class="btn project-btn disabled">
+            <span>Coming Soon</span>
+          </a>
         </div>
       </article>
 
-      <article>
-        <h2>Employee Management System</h2>
-        <p><em>Java, MySQL | Feb 2025 – May 2025</em></p>
-        <ul>
-          <li>Developed a desktop application for HR administration with secure login functionality for both employees and admins.</li>
-          <li>Implemented full CRUD operations including adding new employees, updating salaries, and generating dynamic payroll reports.</li>
+      <!-- Project 3: Employee Management System -->
+      <article class="project-card">
+        <div class="project-header">
+          <h2>Employee Management System</h2>
+          <span class="project-date">Feb 2025 – May 2025</span>
+        </div>
+        <div class="tech-stack">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">JavaFX</span>
+          <span class="tech-tag">JDBC</span>
+          <span class="tech-tag">Git</span>
+        </div>
+        <ul class="project-details">
+          <li>Collaborated in a 3-person agile team to deliver an HR management application for 50+ users, implementing a secure login system with role-based permissions.</li>
+          <li>Designed MySQL database and built RESTful CRUD operations for employee onboarding, salary management, and automated payroll with 100% data accuracy.</li>
+          <li>Ensured application security via JDBC prepared statements and transaction controls, collaborating with the team through Git and code reviews.</li>
           <li>Designed responsive GUI using JavaFX and FXML, enabling real-time data display via TableView and report generation with ListView.</li>
-          <li> Integrated MySQL database access via JDBC, using prepared statements to prevent SQL injection and ensure safe query execution.</li>
         </ul>
         <div class="project-button">
-          <a href="https://github.com/rishitaido/Employee-Management-System" class="btn project-btn" target="_blank">View on GitHub</a>
+          <a href="https://github.com/rishitaido/Employee-Management-System" class="btn project-btn" target="_blank">
+            <span>View on GitHub</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
         </div>
       </article>
 
-      <!-- Project 1 -->
-      <article>
-        <h2>Stock Market Tracker</h2>
-        <p><em>Python | Feb 2025 – April 2025</em></p>
-        <ul>
+      <!-- Project 4: Vehicle Tracker App -->
+      <article class="project-card">
+        <div class="project-header">
+          <h2>Vehicle Tracker App</h2>
+          <span class="project-date">Sep 2025 – Oct 2025</span>
+        </div>
+        <div class="tech-stack">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">Dart</span>
+          <span class="tech-tag">SQLite</span>
+          <span class="tech-tag">Provider</span>
+          <span class="tech-tag">SharedPreferences</span>
+        </div>
+        <ul class="project-details">
+          <li>Integrated state management using Provider with ChangeNotifier, async/await operations for database queries, and comprehensive form validation following DRY principles.</li>
+          <li>Designed database schema with foreign key relationships, optimized queries, and implemented a complete CRUD API through Repository pattern.</li>
+          <li>Designed and implemented complex business logic for automatic reminder generation, calculating service intervals using dual criteria (mileage and time-based) with status categorization algorithms.</li>
+        </ul>
+        <div class="project-button">
+          <a href="#" class="btn project-btn disabled">
+            <span>Private Repository</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 5: Stock Market Tracker -->
+      <article class="project-card">
+        <div class="project-header">
+          <h2>Stock Market Tracker</h2>
+          <span class="project-date">Feb 2025 – April 2025</span>
+        </div>
+        <div class="tech-stack">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Tkinter</span>
+          <span class="tech-tag">Pandas</span>
+          <span class="tech-tag">Alpha Vantage API</span>
+        </div>
+        <ul class="project-details">
           <li>Designed and implemented a desktop application to analyze and visualize real-time and historical stock market data using Alpha Vantage API and Pandas.</li>
           <li>Developed a dynamic Tkinter-based GUI with user-selectable stock symbols, intervals, and indicators such as SMA, EMA, and RSI.</li>
           <li>Integrated candlestick charting with mplfinance, real-time quotes, and technical analysis overlays.</li>
         </ul>
         <div class="project-button">
-          <a href="https://github.com/rishitaido/StockMarketProject" class="btn project-btn" target="_blank">View on GitHub</a>
+          <a href="https://github.com/rishitaido/StockMarketProject" class="btn project-btn" target="_blank">
+            <span>View on GitHub</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
         </div>
       </article>
 
-      <!-- Project 2 -->
-      <article>
-        <h2>Hotel Management System</h2>
-        <p><em>Python | Jan 2024 – Feb 2024</em></p>
-        <ul>
-          <li>Built a desktop application using Tkinter for automated room booking, guest check‑in/out, and billing workflows.</li>
+      <!-- Project 6: Hotel Management System -->
+      <article class="project-card">
+        <div class="project-header">
+          <h2>Hotel Management System</h2>
+          <span class="project-date">Jan 2024 – Feb 2024</span>
+        </div>
+        <div class="tech-stack">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Tkinter</span>
+          <span class="tech-tag">SQLite</span>
+        </div>
+        <ul class="project-details">
+          <li>Built a desktop application using Tkinter for automated room booking, guest check-in/out, and billing workflows.</li>
           <li>Designed and deployed an SQLite database schema to store guest records, room inventory, and transaction history.</li>
-          <li>Implemented input validation, search filters, and PDF invoice export features to streamline front‑desk operations.</li>
+          <li>Implemented input validation, search filters, and PDF invoice export features to streamline front-desk operations.</li>
         </ul>
         <div class="project-button">
-          <a href="https://github.com/rishitaido/Hotel-Managment-Service" class="btn project-btn" target="_blank">View on GitHub</a>
+          <a href="https://github.com/rishitaido/Hotel-Managment-Service" class="btn project-btn" target="_blank">
+            <span>View on GitHub</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
         </div>
       </article>
 
-      <!-- Project 3 -->
-      <article>
-        <h2>Healthier Alternative for Fast Food Chains</h2>
-        <p><em>Python | Jun 2024 – Jul 2024</em></p>
-        <ul>
-          <li>Created a GUI with Tkinter allowing users to select from multiple fast‑food menus and view nutritional facts.</li>
+      <!-- Project 7: Healthier Alternative for Fast Food Chains -->
+      <article class="project-card">
+        <div class="project-header">
+          <h2>Healthier Alternative for Fast Food Chains</h2>
+          <span class="project-date">Jun 2024 – Jul 2024</span>
+        </div>
+        <div class="tech-stack">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Tkinter</span>
+          <span class="tech-tag">CSV</span>
+        </div>
+        <ul class="project-details">
+          <li>Created a GUI with Tkinter allowing users to select from multiple fast-food menus and view nutritional facts.</li>
           <li>Parsed and managed CSV datasets of menu items, calories, fats, and sodium levels for various chains.</li>
-          <li>Developed recommendation logic to suggest lower‑calorie or lower‑fat menu alternatives based on user choice.</li>
+          <li>Developed recommendation logic to suggest lower-calorie or lower-fat menu alternatives based on user choice.</li>
           <li>Displayed total caloric intake per meal and exported custom nutrition reports.</li>
         </ul>
         <div class="project-button">
-          <a href="https://github.com/rishitaido/FastFoodChainAlternatives" class="btn project-btn" target="_blank">View on GitHub</a>
+          <a href="https://github.com/rishitaido/FastFoodChainAlternatives" class="btn project-btn" target="_blank">
+            <span>View on GitHub</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
         </div>
       </article>
+
     </main>
 
     <!-- Footer -->
