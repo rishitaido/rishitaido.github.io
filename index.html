@@ -2,47 +2,474 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rishi Raj - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-
-   <!-- Cinzel for Name | Lora for Summary -->
-   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
+  <title>Rishi Raj - Full Stack Developer</title>
+  <link rel="stylesheet" href="style-index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rishi Raj - Computer Science student at Georgia State University specializing in full-stack development, AI, and cloud computing." />
 </head>
-<body>
 
+<body>
   <!-- Background Video -->
   <video autoplay muted loop id="bg-video">
     <source src="media/animevid.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
-  <!-- Overlay Content -->
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <a href="#home" class="nav-logo">RR</a>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="Rishi Raj's Resume.pdf" download class="btn-resume">Resume ↓</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
   <div class="overlay">
-    <header>
-      <h1>Hey I'm Rishi Raj</h1>
-      <!-- Nav Buttons -->
-        <div class="nav-buttons">
-            <a href="index.html" class="btn">Home</a>
-            <a href="resume.html" class="btn">Résumé</a>
-            <a href="projects.html" class="btn">Projects</a>
-            <a href="https://www.linkedin.com/in/rishi-raj-763122238/" class="btn" target="_blank">LinkedIn</a>
-        </div>
-    </header>
-
-    <section class="intro">  
-        <p>
-          I'm a Computer Science student at Georgia State University with a passion for building clean, thoughtful software. 
-          Whether it’s designing responsive front-end experiences or developing backend systems, I love solving problems that make tech more intuitive and impactful.
-          Explore my site to see what I’ve built, what I’m learning, and where I’m heading.
-        </p>
-      </section>
-
     
-  </div>
-  
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Rishi Raj</span>
+        </h1>
+        <p class="hero-subtitle">Full Stack Developer & Computer Science Student</p>
+        <p class="hero-description">
+          Building scalable web applications with modern technologies. 
+          Currently pursuing BS in Computer Science at Georgia State University with a 3.9 GPA.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/rishi-raj-763122238/" target="_blank" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/rishitaido" target="_blank" aria-label="GitHub">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="mailto:rishitaido@gmail.com" aria-label="Email">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <div class="mouse"></div>
+      </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a passionate Computer Science student at Georgia State University with a strong foundation 
+              in full-stack development, artificial intelligence, and cloud computing. With hands-on experience 
+              in building production-ready applications, I specialize in creating scalable web solutions using 
+              modern frameworks and technologies.
+            </p>
+            <p>
+              Currently working as an AI Training Specialist at Outlier AI, where I evaluate and improve LLM 
+              responses, and recently completed an internship at OpenQQuantify developing 3D weather visualization 
+              platforms. I'm proficient in Python, Java, JavaScript, and various web frameworks including React, 
+              Flask, and Node.js.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+              or working on personal projects that push the boundaries of what's possible with web development.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <h3>3.9</h3>
+              <p>GPA</p>
+            </div>
+            <div class="stat-card">
+              <h3>10+</h3>
+              <p>Projects</p>
+            </div>
+            <div class="stat-card">
+              <h3>3</h3>
+              <p>Jobs</p>
+            </div>
+            <div class="stat-card">
+              <h3>250+</h3>
+              <p>AI Evaluations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+          
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">April 2025 - Present</div>
+              <h3>AI Training Specialist & Prompt Engineer</h3>
+              <h4>Outlier AI • Atlanta, GA</h4>
+              <ul>
+                <li>Evaluated 250+ AI responses from GPT-4, Claude, and other LLMs, providing detailed feedback that improved model accuracy and identified critical edge cases for reinforcement learning workflows.</li>
+                <li>Designed complex test prompts across coding, reasoning, and creative domains to assess LLM capabilities and contribute high-quality training data for model fine-tuning.</li>
+                <li>Analyzed outputs for bias, hallucinations, and safety concerns, enhancing AI alignment with ethical guidelines and reducing unsafe model behaviors in production systems.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">AI/ML</span>
+                <span class="tag">Prompt Engineering</span>
+                <span class="tag">LLM Evaluation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">May 2025 - Aug 2025</div>
+              <h3>Full Stack Software Engineer Intern</h3>
+              <h4>OpenQQuantify • Atlanta, GA</h4>
+              <ul>
+                <li>Developed full-stack 3D weather visualization platform using CesiumJS and WeatherAPI, displaying real-time meteorological data (UV, AQI, marine forecasts, astronomy) on an interactive globe with building overlays.</li>
+                <li>Implemented interactive sensor visualization systems with JavaScript event handlers for draggable map entities, toggle controls for multiple data layers (wind, precipitation, astronomy), and real-time tooltip feedback.</li>
+                <li>Designed responsive, event-driven architecture with asynchronous API integration, toast notifications, loading states, and collapsible panels with drag-and-drop functionality.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">CesiumJS</span>
+                <span class="tag">Python</span>
+                <span class="tag">API Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">June 2021 - Present</div>
+              <h3>Barista</h3>
+              <h4>Starbucks • Atlanta, GA</h4>
+              <ul>
+                <li>Operated under high-pressure, early-morning shifts, preparing 30+ product racks before store opening, ensuring timely readiness and smooth operations.</li>
+                <li>Maintained speed and accuracy under tight deadlines, balancing volume demands with quality control in a fast-paced production environment.</li>
+                <li>Supported daily operations in a customer-facing setting, demonstrating reliability and resilience through disciplined task ownership and rapid problem-solving.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Customer Service</span>
+                <span class="tag">Time Management</span>
+                <span class="tag">Problem Solving</span>
+                <span class="tag">Teamwork</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A selection of my recent work showcasing full-stack development skills</p>
+        
+        <div class="projects-grid">
+          
+          <!-- Project 1 -->
+          <div class="project-card featured">
+            <div class="project-image">
+              <div class="project-overlay">
+                <a href="https://github.com/rishitaido/airports.ai.OQQ" target="_blank" class="project-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-badge">Featured</span>
+              <h3>AI Travel Concierge</h3>
+              <p>Production-ready Flask application with Docker containerization and Prometheus/Grafana monitoring. Features Mistral AI integration with intelligent caching that reduced API costs by 60%.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>Mistral AI</span>
+                <span>Docker</span>
+                <span>MapLibre GL JS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <a href="https://github.com/rishitaido/WeatherDigitalTwin" target="_blank" class="project-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Weather Digital Twin</h3>
+              <p>Full-stack 3D weather visualization platform using CesiumJS displaying real-time meteorological data on an interactive globe with building overlays.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>JavaScript</span>
+                <span>CesiumJS</span>
+                <span>WeatherAPI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <a href="https://github.com/rishitaido/Employee-Management-System" target="_blank" class="project-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Employee Management System</h3>
+              <p>HR management application for 50+ users with secure login system, role-based permissions, and automated payroll with 100% data accuracy.</p>
+              <div class="project-tech">
+                <span>Java</span>
+                <span>MySQL</span>
+                <span>JavaFX</span>
+                <span>JDBC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <a href="https://github.com/rishitaido/VehicleTrackerMAD" target="_blank" class="project-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Vehicle Tracker App</h3>
+              <p>Mobile application with state management using Provider, comprehensive form validation, and complex business logic for automatic reminder generation with dual criteria tracking.</p>
+              <div class="project-tech">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>SQLite</span>
+                <span>Provider</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="view-all-projects">
+          <a href="projects.html" class="btn btn-primary">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Technologies I work with regularly</p>
+        
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">Dart</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Frameworks & Libraries</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">JavaFX</span>
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Three.js</span>
+              <span class="skill-tag">CesiumJS</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools & Technologies</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Android Studio</span>
+              <span class="skill-tag">DBeaver</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Cloud & Certifications</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Microsoft Azure</span>
+              <span class="skill-tag">AI Fundamentals Certified</span>
+              <span class="skill-tag">Azure Fundamentals</span>
+              <span class="skill-tag">Data Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="education-card">
+          <div class="education-icon">🎓</div>
+          <div class="education-content">
+            <h3>Georgia State University</h3>
+            <p class="education-degree">Bachelor of Science in Computer Science</p>
+            <p class="education-gpa">GPA: 3.9/4.0 • Expected May 2026</p>
+            <p class="education-details">
+              <strong>Relevant Courses:</strong> Data Structures & Algorithms, Web Programming, 
+              Mobile App Development, Operating Systems, Artificial Intelligence, 
+              Design Analysis and Algorithms, Cloud Computing, System Level Programming
+            </p>
+            <p class="education-clubs">
+              <strong>Clubs:</strong> CodePath, GSU Computer Science Club
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+              </svg>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:rishitaido@gmail.com">rishitaido@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+14049188060">(404) 918-8060</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+              </svg>
+              <div>
+                <h4>Location</h4>
+                <p>Atlanta, Georgia</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/rishi-raj-763122238/" target="_blank" class="social-card">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/rishitaido" target="_blank" class="social-card">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://rishitaido.github.io/projects.html" target="_blank" class="social-card">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 16.057v-3.057h2.994c-.059 1.143-.212 2.24-.456 3.279-.823-.12-1.674-.188-2.538-.222zm1.957 2.162c-.499 1.33-1.159 2.497-1.957 3.456v-3.62c.666.028 1.319.081 1.957.164zm-1.957-7.219v-3.015c.868-.034 1.721-.103 2.548-.224.238 1.027.389 2.111.446 3.239h-2.994zm0-5.014v-3.661c.806.969 1.471 2.15 1.971 3.496-.642.084-1.3.137-1.971.165zm2.703-3.267c1.237.496 2.354 1.228 3.29 2.146-.642.234-1.311.442-2.019.607-.344-.992-.775-1.91-1.271-2.753zm-7.241 13.56c-.244-1.039-.398-2.136-.456-3.279h2.994v3.057c-.865.034-1.714.102-2.538.222zm2.538 1.776v3.62c-.798-.959-1.458-2.126-1.957-3.456.638-.083 1.291-.136 1.957-.164zm-2.994-7.055c.057-1.128.207-2.212.446-3.239.827.121 1.68.19 2.548.224v3.015h-2.994zm1.024-5.179c.5-1.346 1.165-2.527 1.97-3.496v3.661c-.671-.028-1.329-.081-1.97-.165zm-2.005-.35c-.708-.165-1.377-.373-2.018-.607.937-.918 2.053-1.65 3.29-2.146-.496.844-.927 1.762-1.272 2.753zm-.549 1.918c-.264 1.151-.434 2.36-.492 3.611h-3.933c.165-1.658.739-3.197 1.617-4.518.88.361 1.816.67 2.808.907zm.009 9.262c-.988.236-1.92.542-2.797.9-.89-1.328-1.471-2.879-1.637-4.551h3.934c.058 1.265.231 2.488.5 3.651zm.553 1.917c.342.976.768 1.881 1.257 2.712-1.223-.49-2.326-1.211-3.256-2.115.636-.229 1.299-.435 1.999-.597zm9.924 0c.7.163 1.362.367 1.999.597-.931.903-2.034 1.625-3.257 2.116.489-.832.915-1.737 1.258-2.713zm.553-1.917c.27-1.163.442-2.386.501-3.651h3.934c-.167 1.672-.748 3.223-1.638 4.551-.877-.358-1.81-.664-2.797-.9zm.501-5.651c-.058-1.251-.229-2.46-.492-3.611.992-.237 1.929-.546 2.809-.907.877 1.321 1.451 2.86 1.616 4.518h-3.933z"/>
+              </svg>
+              <span>Portfolio</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Rishi Raj. Built with passion and lots of coffee ☕</p>
+        <p class="footer-links">
+          <a href="#home">Back to Top ↑</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 </html>
